@@ -7,6 +7,7 @@ function App() {
   // Define the Telegram callback globally
   window.onTelegramAuth = function(userData) {
     console.log('Telegram user data:', userData);
+    alert(userData)
     // Send userData to your backend for verification here if needed.
   };
 
@@ -22,7 +23,7 @@ function App() {
     script.src = "https://telegram.org/js/telegram-widget.js?7";
     
     // Set the required data attributes
-    script.setAttribute('data-telegram-login', 'Ffp035551_bot'); // Replace with your bot's username
+    script.setAttribute('data-telegram-login', 'Ffp035551_bot');
     script.setAttribute('data-size', 'large');
     script.setAttribute('data-userpic', 'false');
     script.setAttribute('data-lang', 'en');
